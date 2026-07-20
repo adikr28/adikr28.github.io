@@ -1,16 +1,12 @@
-console.log("Script Loaded!");
 /*=========================================
     SCROLL REVEAL
 =========================================*/
-const cards = document.querySelectorAll(
-".skill-card,.project-card,.contact-card,.about-card,.developer-card"
-);
 
-const observer = new IntersectionObserver((entries)=>{
+const observer = new IntersectionObserver((entries) => {
 
-    entries.forEach(entry=>{
+    entries.forEach((entry) => {
 
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
 
             entry.target.classList.add("show");
 
@@ -18,46 +14,67 @@ const observer = new IntersectionObserver((entries)=>{
 
     });
 
-},{
-    threshold:.2
+}, {
+    threshold: 0.15
 });
 
-cards.forEach(card=>observer.observe(card));
-
+document.querySelectorAll(
+    ".about-card, .skill-card, .project-card, .contact-card, .developer-card"
+).forEach((el) => observer.observe(el));
 /*=========================================
-    ACTIVE NAVIGATION
+    ACTIVE NAVBAR
 =========================================*/
 
-const navLinks=document.querySelectorAll(".nav-links a");
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
 
-    let current="";
+    let current = "";
 
-    sections.forEach(section=>{
+    sections.forEach(section => {
 
-        const sectionTop=section.offsetTop-120;
+        const sectionTop = section.offsetTop - 150;
 
-        const sectionHeight=section.clientHeight;
+        if (window.scrollY >= sectionTop) {
 
-        if(pageYOffset>=sectionTop){
-
-            current=section.getAttribute("id");
+            current = section.getAttribute("id");
 
         }
 
     });
 
-    navLinks.forEach(link=>{
+    navLinks.forEach(link => {
 
         link.classList.remove("active");
 
-        if(link.getAttribute("href")==="#"+current){
+        if (link.getAttribute("href") === "#" + current) {
 
             link.classList.add("active");
 
         }
 
     });
+
+});
+/*=========================================
+    HEADER EFFECT
+=========================================*/
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 60) {
+
+        header.style.background = "rgba(13,17,23,.95)";
+        header.style.boxShadow = "0 5px 30px rgba(0,0,0,.3)";
+
+    } else {
+
+        header.style.background = "rgba(13,17,23,.82)";
+        header.style.boxShadow = "none";
+
+    }
 
 });

@@ -1,53 +1,79 @@
+# 🌐 Aditya Kumar | Portfolio
 
-# 🌐 Aditya Kumar Portfolio
+A modern, responsive portfolio showcasing my journey as a Computer Science Engineering student passionate about **Data Analytics**, **Business Intelligence**, and **Software Development**.
 
-A modern, responsive personal portfolio website built to showcase my skills, projects, and journey as a Computer Science Engineering student with a focus on Data Analytics and Software Development.
+🔗 **Live Portfolio:** https://adikr28.github.io/
 
-## 🚀 Live Website
+---
 
-🔗 https://adikr28.github.io/
+# 👋 About
 
-## 📌 About
+Hi, I'm **Aditya Kumar**, a Computer Science Engineering student with a strong interest in transforming data into actionable insights.
 
-This portfolio highlights:
+I enjoy working with:
+- 📊 Data Analytics
+- 📈 Business Intelligence
+- 🗄️ SQL
+- 🐍 Python
+- 📉 Power BI
+- 💻 Web Development
+
+I'm continuously building projects that solve real-world problems while strengthening my analytical and programming skills.
+
+---
+
+# 🚀 Portfolio Highlights
 
 - 👨‍💻 About Me
 - 🛠️ Technical Skills
 - 📂 Featured Projects
+- 📄 Resume
 - 📞 Contact Information
-- 📄 Resume (Coming Soon)
-
-The website is designed with a clean, modern UI and optimized for desktop and mobile devices.
+- 🌐 Responsive Design
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
+### Programming
+- Python
+- SQL
+- Java
+- JavaScript
+
+### Data Analytics
+- Power BI
+- Excel
+- Pandas
+- NumPy
+
+### Web Technologies
 - HTML5
 - CSS3
 - JavaScript
-- Font Awesome
-- Devicon Icons
+
+### Tools
 - Git
-- GitHub Pages
+- GitHub
+- VS Code
+- SSMS
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-- Responsive Design
-- Modern Dark Theme
-- Interactive Skill Cards
-- Project Showcase
-- Contact Section
-- Smooth Hover Effects
-- GitHub Pages Deployment
-- Custom Favicon
-- Clean & Minimal UI
+- ✅ Fully Responsive
+- 🌙 Modern Dark UI
+- 🎯 Clean & Minimal Design
+- 📊 Analytics-focused Projects
+- 🖼️ Interactive Skill Cards
+- ⚡ Smooth Animations
+- 📱 Mobile Friendly
+- 🌐 Hosted on GitHub Pages
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 Portfolio/
@@ -71,40 +97,77 @@ Portfolio/
 
 ---
 
-## 📸 Preview
+# 📸 Preview
 
-<img width="1898" height="913" alt="image" src="https://github.com/user-attachments/assets/ab2f4217-cfd3-46a9-8e40-889b58828831" />
-
-
-
-
----
-
-## 📈 Future Improvements
-
-- Add Resume Download
-- Additional Data Analytics Projects
-- Blog Section
-- Light/Dark Theme Toggle
-- Project Filtering
-- More Animations
-- Custom Domain
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ab2f4217-cfd3-46a9-8e40-889b58828831" width="100%">
+</p>
 
 ---
 
-## 🤝 Connect With Me
+# 📌 Featured Projects
 
-- 💼 LinkedIn: https://linkedin.com/in/adikr28
-- 💻 GitHub: https://github.com/adikr28
-- 🧩 LeetCode: https://leetcode.com/u/adikr2802/
-- 📧 Email: adikr2802@gmail.com
+### 📊 SQL QueryCraft
+A collection of SQL interview questions, solutions, and real-world query practice covering joins, CTEs, window functions, aggregations, and more.
 
----
+### 📈 Data Analytics Projects
+Interactive dashboards and business insights created using Power BI, SQL, and Python.
 
-## ⭐ If you like this project
-
-Consider giving this repository a ⭐ to support my work.
+### 🌐 Personal Portfolio
+A fully responsive portfolio website showcasing my skills, projects, and achievements.
 
 ---
 
-Made with ❤️ by **Aditya Kumar**
+# 🎯 Currently Learning
+
+- Advanced SQL
+- Power BI
+- Python for Data Analytics
+- Data Visualization
+- Statistics
+- Business Analytics
+
+---
+
+# 🚀 Future Roadmap
+
+- 📄 Resume Download
+- 📚 Blog Section
+- 📊 Live Power BI Dashboard
+- 🌗 Light/Dark Theme Toggle
+- 🔍 Project Search & Filtering
+- 📈 More Analytics Projects
+- 🌍 Custom Domain
+
+---
+
+# 🤝 Connect With Me
+
+💼 **LinkedIn**  
+https://linkedin.com/in/adikr28
+
+💻 **GitHub**  
+https://github.com/adikr28
+
+🧩 **LeetCode**  
+https://leetcode.com/u/adikr2802/
+
+📧 **Email**  
+adikr2802@gmail.com
+
+🌐 **Portfolio**  
+https://adikr28.github.io/
+
+---
+
+# ⭐ Support
+
+If you found this project useful or inspiring, consider giving it a ⭐ on GitHub.
+
+It helps support my work and motivates me to continue building and sharing projects.
+
+---
+
+<p align="center">
+Made with ❤️ by <strong>Aditya Kumar</strong>
+</p>

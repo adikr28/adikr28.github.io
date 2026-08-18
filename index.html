@@ -1,613 +1,1807 @@
 <!DOCTYPE html>
-< lang="en">
+<html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP381YBHH0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-ZP381YBHH0');
-</script>
+    <!-- ================= GOOGLE ANALYTICS ================= -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP381YBHH0"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-ZP381YBHH0');
+    </script>
+
+
+    <!-- ================= META ================= -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Aditya Kumar | Portfolio</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Portfolio of Aditya Kumar - Computer Science Engineer and Aspiring Data Analyst.">
+          content="Aditya Kumar — Computer Science Engineer focused on SQL, Python, Power BI and Data Analytics.">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Aditya Kumar | Data Analyst Portfolio</title>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
-        rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ================= FONTS ================= -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- ================= ICONS ================= -->
+
     <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- ================= FAVICON ================= -->
+
+    <link rel="shortcut icon"
+          href="favicon.ico"
+          type="image/x-icon">
+
+
+    <!-- ================= CSS ================= -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
 
 </head>
 
+
 <body>
 
-    <!-- ================= NAVBAR ================= -->
 
-    <header class="header">
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
 
-        <nav class="navbar">
+<canvas id="cherryBlossoms"
+        aria-hidden="true">
+</canvas>
 
-            <a href="#" class="logo">
-                Aditya Kumar
-            </a>
 
-            <ul class="nav-links">
 
-                <li><a href="#home">Home</a></li>
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-                <li><a href="#about">About</a></li>
+<header class="header">
 
-                <li><a href="#skills">Skills</a></li>
+    <nav class="navbar">
 
-                <li><a href="#projects">Projects</a></li>
 
-                <li><a href="#contact">Contact</a></li>
+        <!-- LOGO -->
 
-            </ul>
+        <a href="#profileModal"
+   class="logo-area"
+   id="profilePhotoBtn"
+   aria-label="View Aditya Kumar profile photo">
 
-            <a href="#" class="resume-btn">
+    <img src="assets/profile.jpg" alt="Aditya Kumar">
 
-                Resume
+    <span>Aditya Kumar</span>
 
-            </a>
+</a>
 
-        </nav>
 
-    </header>
+        <!-- NAVIGATION -->
 
-    <!-- ================= HERO ================= -->
+        <ul class="nav-links">
 
-<section class="hero" id="home">
+            <li>
+                <a href="#home"
+                   class="active">
 
-    <div class="hero-left">
+                    Home
+
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#data-profile">
+
+                    Me, in Data
+
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#skills">
+
+                    Skills
+
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#projects">
+
+                    Projects
+
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#contact">
+
+                    Contact
+
+                </a>
+            </li>
+
+        </ul>
+
+
+
+        <!-- RESUME -->
+
+        <a href="assets/resume/Aditya_Kumar_Resume.pdf"
+           class="resume-btn"
+           target="_blank">
+
+            Resume
+
+        </a>
+
+
+
+        <!-- MOBILE MENU -->
+
+        <button class="mobile-menu-btn"
+                type="button"
+                aria-label="Open menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero"
+         id="home">
+
+
+    <!-- HERO LEFT -->
+
+    <div class="hero-left reveal">
+
 
         <p class="tag">
+
             COMPUTER SCIENCE ENGINEER
+
         </p>
+
+
 
         <h1>
-            Building Data-Driven
+
+            I Turn Data
             <br>
-            Solutions with
-            <span>SQL & Analytics.</span>
+
+            Into
+            <span>Insights.</span>
+
         </h1>
 
+
+
         <p class="hero-text">
-           Aspiring Data Analyst passionate about transforming
-raw data into actionable insights using SQL, Python,
-and Tableau.
+
+            Computer Science Engineer focused on SQL,
+            Python and BI — building practical analyses,
+            dashboards and data-driven solutions.
+
         </p>
+
+
+
+        <!-- BUTTONS -->
 
         <div class="hero-buttons">
 
-            <a href="#projects" class="primary-btn">
-                View Projects
+            <a href="#projects"
+               class="primary-btn">
+
+                View My Work
+
             </a>
+
 
             <a href="assets/resume/Aditya_Kumar_Resume.pdf"
                class="secondary-btn"
                target="_blank">
+
                 Download Resume
+
             </a>
 
         </div>
 
-        <div class="tech-stack">
 
-            <span>SQL</span>
+
+        <!-- TECHNOLOGY TAGS -->
+
+        <div class="hero-tags">
+
+            <a href="#project-sql" class="hero-tag-link">SQL</a>
 
             <span>Python</span>
 
-            <span>Tableau</span>
+            <a href="#project-powerbi" class="hero-tag-link">Power BI</a>
 
-            <span>Git</span>
-
-            <span>GitHub</span>
+            <span>Excel</span>
 
         </div>
 
+
     </div>
 
-    <div class="hero-right">
 
-        <div class="developer-card">
 
-            <h3>Aditya Kumar</h3>
+    <!-- HERO RIGHT -->
 
-            <p>Aspiring Data Analyst</p>
+    <div class="hero-right reveal">
 
-            <hr>
+    <div class="profile-status">
 
-            <div class="skill">
+        <span></span>
 
-                <span>SQL</span>
+        Open
 
-                <div class="bar">
-                    <div style="width:90%"></div>
+    </div>
+
+</div>
+
+    </div>
+
+
+
+            <div class="profile-divider"></div>
+
+
+
+            <!-- FOCUS -->
+
+            <div class="focus-list">
+
+
+                <div class="focus-row">
+
+                    <span>01</span>
+
+                    <div>
+
+                        <strong>SQL</strong>
+
+                        <small>
+                            Query & transform
+                        </small>
+
+                    </div>
+
                 </div>
 
-            </div>
 
-            <div class="skill">
 
-                <span>Python</span>
+                <div class="focus-row">
 
-                <div class="bar">
-                    <div style="width:75%"></div>
+                    <span>02</span>
+
+                    <div>
+
+                        <strong>Python</strong>
+
+                        <small>
+                            Analyze & automate
+                        </small>
+
+                    </div>
+
                 </div>
 
-            </div>
 
-            <div class="skill">
 
-                <span>Tableau</span>
+                <div class="focus-row">
 
-                <div class="bar">
-                    <div style="width:65%"></div>
+                    <span>03</span>
+
+                    <div>
+
+                        <strong>Power BI</strong>
+
+                        <small>
+                            Visualize & explain
+                        </small>
+
+                    </div>
+
                 </div>
 
-            </div>
 
-            <div class="skill">
 
-                <span>Git</span>
+                <div class="focus-row">
 
-                <div class="bar">
-                    <div style="width:80%"></div>
+                    <span>04</span>
+
+                    <div>
+
+                        <strong>Excel</strong>
+
+                        <small>
+                            Prepare & explore
+                        </small>
+
+                    </div>
+
                 </div>
 
+
             </div>
 
-            <div class="status">
-                🟢 Available for Opportunities
+
+
+            <div class="profile-footer">
+
+                CSE
+
+                <span>→</span>
+
+                DATA
+
+                <span>→</span>
+
+                INSIGHTS
+
             </div>
+
 
         </div>
 
-    </div>
 
 </section>
 
-<!-- ================= ABOUT ================= -->
 
-<section class="about" id="about">
 
-    <div class="section-title">
+<!-- =====================================================
+     ME IN DATA
+===================================================== -->
 
-        <span>ABOUT ME</span>
+<section id="data-profile"
+         class="data-profile">
 
-        <h2>Building Skills That Solve Real Problems.</h2>
 
-    </div>
+    <!-- SECTION HEADING -->
 
-    <div class="about-container">
+    <div class="section-heading reveal">
 
-        <div class="about-left">
 
-            <p>
-                I'm <strong>Aditya Kumar</strong>, a Computer Science Engineering
-                student passionate about Data Analytics and Software Development.
-            </p>
+        <span class="section-kicker">
 
-            <p>
-                I enjoy transforming raw data into meaningful insights using
-                SQL, Python and Tableau while continuously building practical
-                projects.
-            </p>
+            ANALYTICS PROFILE
 
-            <p>
-                My goal is to become a Data Analyst who can solve business
-                problems through data-driven decision making.
-            </p>
+        </span>
 
-        </div>
 
-        <div class="about-right">
+        <h2>
 
-            <div class="about-card">
+            Me, in Data
 
-                <h3>Core Strengths</h3>
+        </h2>
 
-                <div class="strength">SQL & Database Design</div>
-
-                <div class="strength">Python Programming</div>
-
-                <div class="strength">Data Analysis</div>
-
-                <div class="strength">Git & GitHub</div>
-
-                <div class="strength">Problem Solving</div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ================= TECH STACK ================= -->
-
-<section class="skills" id="skills">
-
-    <div class="section-title">
-
-        <span>TECH STACK</span>
-
-        <h2>Technologies I Work With.</h2>
-
-    </div>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-
-            <div class="skill-icon">
-                <i class="devicon-microsoftsqlserver-plain colored"></i>
-            </div>
-
-            <h3>SQL</h3>
-
-            <p>SQL Server • Queries • Joins • CTEs</p>
-            <p>Dashboards & Data Visualization</p>
-            <p>OOP • Collections • DSA Basics</p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <div class="skill-icon">
-                <i class="devicon-python-plain colored"></i>
-            </div>
-
-            <h3>Python</h3>
-
-            <p>Intermediate</p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <div class="skill-icon">
-                <i class="devicon-java-plain colored"></i>
-            </div>
-
-            <h3>Java</h3>
-
-            <p>Intermediate</p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <div class="skill-icon">
-                <i class="devicon-git-plain colored"></i>
-            </div>
-
-            <h3>Git</h3>
-
-            <p>Intermediate</p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <div class="skill-icon">
-                <i class="devicon-github-original"></i>
-            </div>
-
-            <h3>GitHub</h3>
-
-            <p>Intermediate</p>
-
-        </div>
-
-        <div class="skill-card">
-
-            <div class="skill-icon">
-                <i class="fa-solid fa-chart-column"></i>
-            </div>
-
-            <h3>Tableau</h3>
-
-            <p>Learning</p>
-
-        </div>
-        <div class="skill-card">
-
-    <div class="skill-icon">
-        <i class="devicon-cplusplus-plain colored"></i>
-    </div>
-
-    <h3>C++</h3>
-
-    <p>STL • OOP • DSA</p>
-
-    </div>
-
-    </div>
-
-</section>
-<!-- ================= FEATURED PROJECTS ================= -->
-
-<section class="projects" id="projects">
-
-    <div class="section-title">
-
-        <span>FEATURED WORK</span>
-
-        <h2>Projects That Demonstrate My Skills.</h2>
-
-    </div>
-
-    <div class="project-grid">
-
-        <!-- Project 1 -->
-
-        <div class="project-card">
-
-            <div class="project-banner">
-
-                <div>
-
-                    <h2>SQL Practice Repository</h2>
-
-                    <p>SQL Server • Git • GitHub</p>
-
-                </div>
-
-            </div>
-
-            <div class="project-content">
-
-                <h3>SQL Practice Repository</h3>
-
-                <p>
-
-                    A structured SQL repository containing practical
-                    queries covering Joins, CTEs, Window Functions,
-                    Subqueries, Views, Stored Procedures and
-                    real-world database challenges.
-
-                </p>
-
-                < class="project-highlights">
-
-            <ul class="project-highlights">
-
-    <li>✅ 120+ SQL Practice Queries</li>
-
-    <li>✅ Joins, CTEs & Window Functions</li>
-
-    <li>✅ Real-world Business Problems</li>
-
-</ul>
-
-                <div class="project-tags">
-
-                    <span>SQL Server</span>
-
-                    <span>Git</span>
-
-                    <span>GitHub</span>
-
-                </div>
-
-                <div class="project-buttons">
-
-                    <a href="https://github.com/adikr28/SQL-Practice"
-                       target="_blank">
-
-                        View Repository →
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Project 2 -->
-
-        <div class="project-card">
-
-            <div class="project-banner">
-
-                <div>
-
-                    <h2>Portfolio Website</h2>
-
-                    <p>HTML • CSS • JavaScript</p>
-
-                </div>
-
-            </div>
-
-            <div class="project-content">
-
-                <h3>Personal Portfolio Website</h3>
-
-                <p>
-
-                    Responsive personal portfolio showcasing projects,
-                    technical skills and professional experience using
-                    modern web technologies.
-
-                </p>
-                
-
-                <ul class="project-highlights">
-
-                    <li>Responsive Design</li>
-
-                    <li>Modern UI/UX</li>
-
-                    <li>GitHub Pages Ready</li>
-
-                </ul>
-
-                <div class="project-tags">
-
-                    <span>HTML</span>
-
-                    <span>CSS</span>
-
-                    <span>JavaScript</span>
-
-                </div>
-
-                <div class="project-buttons">
-
-                    <a href="#" target="_blank">
-
-                        Live Demo →
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ================= CONTACT ================= -->
-
-<section class="contact" id="contact">
-
-    <div class="section-title">
-
-        <span>CONTACT</span>
-
-        <h2>Let's Connect.</h2>
-
-    </div>
-
-    <p class="contact-text">
-
-        I'm currently looking for opportunities in Data Analytics
-        and Software Development.
-        Feel free to connect with me.
-
-    </p>
-
-    <div class="contact-grid">
-
-        <a href="mailto:adikr2802@gmail.com" class="contact-card">
-
-            <i class="fa-solid fa-envelope"></i>
-
-            <h3>Email</h3>
-
-            <p>adikr2802@gmail.com</p>
-
-        </a>
-
-        <a href="https://github.com/adikr28"
-           target="_blank"
-           class="contact-card">
-
-            <i class="fa-brands fa-github"></i>
-
-            <h3>GitHub</h3>
-
-            <p>github.com/adikr28</p>
-
-        </a>
-
-        <a href="https://www.linkedin.com/in/adikr28"
-           target="_blank"
-           class="contact-card">
-
-            <i class="fa-brands fa-linkedin"></i>
-
-            <h3>LinkedIn</h3>
-
-            <p>linkedin.com/in/adikr28</p>
-
-        </a>
-
-        <a href="https://leetcode.com/u/adikr2802/"
-           target="_blank"
-           class="contact-card">
-
-            <i class="fa-solid fa-code"></i>
-
-            <h3>LeetCode</h3>
-
-            <p>leetcode.com/u/adikr2802</p>
-
-        </a>
-
-    </div>
-
-</section>
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="footer-content">
-
-        <h2>Aditya Kumar</h2>
 
         <p>
 
-            Building practical data solutions with
-            SQL, Python and Analytics.
+            A visual snapshot of how I learn,
+            analyze and work with data.
 
         </p>
 
+
+    </div>
+
+
+
+    <!-- DATA GRID -->
+
+    <div class="data-profile-grid">
+
+
+
+        <!-- =================================================
+             TOOLKIT
+        ================================================= -->
+
+        <article class="data-card toolkit-card reveal">
+
+
+            <div class="data-card-header">
+
+
+                <div>
+
+                    <span class="mini-label">
+
+                        TOOLKIT
+
+                    </span>
+
+
+                    <h3>
+
+                        What I work with
+
+                    </h3>
+
+                </div>
+
+
+                <span class="card-index">
+
+                    01
+
+                </span>
+
+
+            </div>
+
+
+
+            <!-- DONUT -->
+
+            <div class="tool-visual">
+
+
+                <div class="radial-chart"
+                     id="radialChart">
+
+
+                    <div class="radial-center">
+
+
+                        <strong id="toolkitTitle">
+
+                            SQL
+
+                        </strong>
+
+
+                        <span id="toolkitDescription">
+
+                            Query, filter and analyze
+                            structured data.
+
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- TOOL SELECTOR -->
+
+            <div class="tool-legend">
+
+
+                <button type="button"
+                        class="tool-item active"
+                        data-tool="SQL"
+                        data-description="Query, filter and analyze structured data."
+                        data-progress="90">
+
+                    <span class="legend-dot sql"></span>
+
+                    SQL
+
+                </button>
+
+
+
+                <button type="button"
+                        class="tool-item"
+                        data-tool="Python"
+                        data-description="Manipulate, explore and analyze data."
+                        data-progress="75">
+
+                    <span class="legend-dot python"></span>
+
+                    Python
+
+                </button>
+
+
+
+                <button type="button"
+                        class="tool-item"
+                        data-tool="Power BI"
+                        data-description="Turn analysis into interactive visual insights."
+                        data-progress="70">
+
+                    <span class="legend-dot powerbi"></span>
+
+                    Power BI
+
+                </button>
+
+
+
+                <button type="button"
+                        class="tool-item"
+                        data-tool="Excel"
+                        data-description="Organize, prepare and explore data."
+                        data-progress="70">
+
+                    <span class="legend-dot excel"></span>
+
+                    Excel
+
+                </button>
+
+
+            </div>
+
+
+
+            <p class="disclaimer">
+
+                Current focus — not a formal proficiency score.
+
+            </p>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             JOURNEY
+        ================================================= -->
+
+        <article class="data-card journey-card reveal">
+
+
+            <div class="data-card-header">
+
+
+                <div>
+
+                    <span class="mini-label">
+
+                        JOURNEY
+
+                    </span>
+
+
+                    <h3>
+
+                        From code to insights
+
+                    </h3>
+
+                </div>
+
+
+                <span class="card-index">
+
+                    02
+
+                </span>
+
+
+            </div>
+
+
+
+            <!-- JOURNEY TIMELINE -->
+
+            <div class="journey-chart">
+
+
+                <div class="journey-line"></div>
+
+
+
+                <!-- CSE -->
+
+                <button class="journey-point active"
+                        type="button"
+                        data-stage="CSE">
+
+                    <span class="point"></span>
+
+                    <strong>CSE</strong>
+
+                    <small>Foundation</small>
+
+                </button>
+
+
+
+                <!-- SQL -->
+
+                <button class="journey-point"
+                        type="button"
+                        data-stage="SQL">
+
+                    <span class="point"></span>
+
+                    <strong>SQL</strong>
+
+                    <small>Query</small>
+
+                </button>
+
+
+
+                <!-- PYTHON -->
+
+                <button class="journey-point"
+                        type="button"
+                        data-stage="Python">
+
+                    <span class="point"></span>
+
+                    <strong>Python</strong>
+
+                    <small>Analyze</small>
+
+                </button>
+
+
+
+                <!-- BI -->
+
+                <button class="journey-point"
+                        type="button"
+                        data-stage="BI">
+
+                    <span class="point"></span>
+
+                    <strong>BI</strong>
+
+                    <small>Visualize</small>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- CURRENT FOCUS -->
+
+            <div class="journey-insight">
+
+
+                <span class="journey-insight-label">
+
+                    CURRENT FOCUS
+
+                </span>
+
+
+
+                <div class="journey-insight-content">
+
+
+                    <div>
+
+
+                        <strong id="journeyInsightTitle">
+
+                            CSE
+
+                        </strong>
+
+
+                        <p id="journeyInsightText">
+
+                            Building a strong foundation
+                            in computer science, logic
+                            and problem-solving.
+
+                        </p>
+
+
+                    </div>
+
+
+                    <span id="journeyInsightNumber"
+                          class="journey-insight-number">
+
+                        01
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="journey-caption">
+
+                Learning
+
+                <span>→</span>
+
+                Building
+
+                <span>→</span>
+
+                Analyzing
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             WORKFLOW
+        ================================================= -->
+<section class="approach-section reveal">
+
+    <div class="section-heading">
+        <div>
+            <span class="section-kicker">MY APPROACH</span>
+
+            <h2>How I work with data</h2>
+        </div>
+
+        <span class="section-number">03</span>
+    </div>
+
+
+    <div class="approach-flow">
+
+        <!-- 01 -->
+        <div class="approach-step">
+
+            <div class="approach-icon">
+                <i class="fa-solid fa-database"></i>
+            </div>
+
+            <span class="approach-number">01</span>
+
+            <h3>Raw Data</h3>
+
+            <p>Understand</p>
+
+        </div>
+
+
+        <div class="approach-arrow">
+            →
+        </div>
+
+
+        <!-- 02 -->
+        <div class="approach-step">
+
+            <div class="approach-icon">
+                <i class="fa-solid fa-filter"></i>
+            </div>
+
+            <span class="approach-number">02</span>
+
+            <h3>Clean</h3>
+
+            <p>Prepare</p>
+
+        </div>
+
+
+        <div class="approach-arrow">
+            →
+        </div>
+
+
+        <!-- 03 -->
+        <div class="approach-step">
+
+            <div class="approach-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <span class="approach-number">03</span>
+
+            <h3>Analyze</h3>
+
+            <p>Question</p>
+
+        </div>
+
+
+        <div class="approach-arrow">
+            →
+        </div>
+
+
+        <!-- 04 -->
+        <div class="approach-step">
+
+            <div class="approach-icon">
+                <i class="fa-solid fa-chart-column"></i>
+            </div>
+
+            <span class="approach-number">04</span>
+
+            <h3>Visualize</h3>
+
+            <p>Explain</p>
+
+        </div>
+
+
+        <div class="approach-arrow">
+            →
+        </div>
+
+
+        <!-- 05 -->
+        <div class="approach-step">
+
+            <div class="approach-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+
+            <span class="approach-number">05</span>
+
+            <h3>Insight</h3>
+
+            <p>Decide</p>
+
+        </div>
+
+    </div>
+
+</section>
+        
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section class="skills"
+         id="skills">
+
+
+    <div class="section-title reveal">
+
+
+        <span>
+
+            TECH STACK
+
+        </span>
+
+
+        <h2>
+
+            Tools I Use to Work With Data.
+
+        </h2>
+
+
+    </div>
+
+
+
+    <div class="skills-grid">
+
+
+
+        <!-- SQL -->
+
+        <a href="#project-sql"
+           class="skill-card skill-link reveal"
+           data-skill-target="project-sql">
+
+            <div class="skill-icon">
+
+                <i class="devicon-microsoftsqlserver-plain colored"></i>
+
+            </div>
+
+
+            <h3>
+
+                SQL
+
+            </h3>
+
+
+            <p>
+
+                SQL Server • Queries • Joins
+                • CTEs • Window Functions
+
+            </p>
+
+            <span class="skill-project-link">
+                View SQL project →
+            </span>
+
+        </a>
+
+
+
+        <!-- PYTHON -->
+
+        <article class="skill-card reveal">
+
+            <div class="skill-icon">
+
+                <i class="devicon-python-plain colored"></i>
+
+            </div>
+
+
+            <h3>
+
+                Python
+
+            </h3>
+
+
+            <p>
+
+                Data manipulation,
+                analysis and automation.
+
+            </p>
+
+        </article>
+
+
+
+        <!-- POWER BI -->
+
+        <a href="#project-powerbi"
+           class="skill-card skill-link reveal"
+           data-skill-target="project-powerbi">
+
+            <div class="skill-icon">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+            </div>
+
+
+            <h3>
+
+                Power BI
+
+            </h3>
+
+
+            <p>
+
+                Dashboards, KPIs and
+                interactive visualization.
+
+            </p>
+
+            <span class="skill-project-link">
+                View Power BI project →
+            </span>
+
+        </a>
+
+
+
+        <!-- EXCEL -->
+
+        <article class="skill-card reveal">
+
+            <div class="skill-icon">
+
+                <i class="fa-solid fa-table-cells"></i>
+
+            </div>
+
+
+            <h3>
+
+                Excel
+
+            </h3>
+
+
+            <p>
+
+                Data preparation,
+                exploration and analysis.
+
+            </p>
+
+        </article>
+
+
+
+        <!-- GIT -->
+
+        <a href="https://github.com/adikr28"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="skill-card skill-link reveal">
+
+            <div class="skill-icon">
+
+                <i class="devicon-git-plain colored"></i>
+
+            </div>
+
+
+            <h3>
+
+                Git
+
+            </h3>
+
+
+            <p>
+
+                Version control and
+                project workflow.
+
+            </p>
+
+            <span class="skill-project-link">
+                View GitHub profile →
+            </span>
+
+        </a>
+
+
+
+        <!-- GITHUB -->
+
+        <a href="https://github.com/adikr28"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="skill-card skill-link reveal">
+
+            <div class="skill-icon">
+
+                <i class="devicon-github-original"></i>
+
+            </div>
+
+
+            <h3>
+
+                GitHub
+
+            </h3>
+
+
+            <p>
+
+                Projects, repositories
+                and collaboration.
+
+            </p>
+
+            <span class="skill-project-link">
+                Open GitHub →
+            </span>
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURED PROJECTS
+===================================================== -->
+
+<section id="projects" class="projects">
+
+    <div class="section-title">
+
+        <div class="section-kicker">
+            FEATURED WORK
+        </div>
+
+        <h2>
+            Projects That<br>
+            Prove the Skills.
+        </h2>
+
+    </div>
+
+
+    <div class="project-grid">
+
+
+        <!-- =================================================
+             PROJECT 01 — POWER BI
+        ================================================== -->
+
+        <a
+            id="project-powerbi"
+            href="https://github.com/adikr28/PowerBI-Sales-Analytics-Dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card"
+        >
+
+            <div class="project-number">
+                01
+            </div>
+
+            <h3>
+                Power BI Sales Analytics
+            </h3>
+
+            <p>
+                Interactive sales dashboard analyzing
+                sales performance, customers, products,
+                categories and monthly trends.
+            </p>
+
+            <div class="project-tags">
+
+                <span>Power BI</span>
+                <span>DAX</span>
+                <span>Power Query</span>
+
+            </div>
+
+            <div class="project-link">
+                View Project →
+            </div>
+
+        </a>
+
+
+
+        <!-- =================================================
+             PROJECT 02 — SQL
+        ================================================== -->
+
+        <a
+            id="project-sql"
+            href="https://github.com/adikr28/SQL-Practice"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card"
+        >
+
+            <div class="project-number">
+                02
+            </div>
+
+            <h3>
+                SQL Practice
+            </h3>
+
+            <p>
+                Practical SQL work covering queries,
+                filtering, joins, aggregations, subqueries,
+                CTEs and analytical problem solving.
+            </p>
+
+            <div class="project-tags">
+
+                <span>SQL</span>
+                <span>SSMS</span>
+                <span>Analytics</span>
+
+            </div>
+
+            <div class="project-link">
+                View Project →
+            </div>
+
+        </a>
+
+
+
+        <!-- =================================================
+             PROJECT 03 — DATA PORTFOLIO
+        ================================================== -->
+
+        <a
+            id="project-portfolio"
+            href="https://adikr28.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card"
+        >
+
+            <div class="project-number">
+                03
+            </div>
+
+            <h3>
+                Data Analyst Portfolio
+            </h3>
+
+            <p>
+                Personal portfolio showcasing data
+                analysis projects, technical skills,
+                dashboards and analytical work.
+            </p>
+
+            <div class="project-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
+            </div>
+
+            <div class="project-link">
+                View Project →
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact"
+         id="contact">
+
+
+    <div class="section-title reveal">
+
+
+        <span>
+
+            CONTACT
+
+        </span>
+
+
+        <h2>
+
+            Let's Connect.
+
+        </h2>
+
+
+    </div>
+
+
+
+    <p class="contact-text reveal">
+
+        I'm looking for opportunities where I can
+        solve practical problems through data,
+        analysis and technology.
+
+    </p>
+
+
+
+    <div class="contact-grid">
+
+
+
+        <!-- EMAIL -->
+
+        <a href="mailto:adikr2802@gmail.com"
+           class="contact-card reveal">
+
+
+            <i class="fa-solid fa-envelope"></i>
+
+
+            <h3>
+
+                Email
+
+            </h3>
+
+
+            <p>
+
+                adikr2802@gmail.com
+
+            </p>
+
+
+        </a>
+
+
+
+        <!-- GITHUB -->
+
+        <a href="https://github.com/adikr28"
+           target="_blank"
+           rel="noopener"
+           class="contact-card reveal">
+
+
+            <i class="fa-brands fa-github"></i>
+
+
+            <h3>
+
+                GitHub
+
+            </h3>
+
+
+            <p>
+
+                github.com/adikr28
+
+            </p>
+
+
+        </a>
+
+
+
+        <!-- LINKEDIN -->
+
+        <a href="https://www.linkedin.com/in/adikr28"
+           target="_blank"
+           rel="noopener"
+           class="contact-card reveal">
+
+
+            <i class="fa-brands fa-linkedin"></i>
+
+
+            <h3>
+
+                LinkedIn
+
+            </h3>
+
+
+            <p>
+
+                linkedin.com/in/adikr28
+
+            </p>
+
+
+        </a>
+
+
+
+        <!-- LEETCODE -->
+
+        <a href="https://leetcode.com/u/adikr2802/"
+           target="_blank"
+           rel="noopener"
+           class="contact-card reveal">
+
+
+            <i class="fa-solid fa-code"></i>
+
+
+            <h3>
+
+                LeetCode
+
+            </h3>
+
+
+            <p>
+
+                leetcode.com/u/adikr2802
+
+            </p>
+
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div class="footer-content">
+
+
+        <h2>
+
+            Aditya Kumar
+
+        </h2>
+
+
+        <p>
+
+            Building practical data solutions
+            with SQL, Python and Analytics.
+
+        </p>
+
+
+
         <div class="footer-socials">
 
-            <a href="https://github.com/adikr28" target="_blank">
+
+            <a href="https://github.com/adikr28"
+               target="_blank"
+               rel="noopener"
+               aria-label="GitHub">
 
                 <i class="fa-brands fa-github"></i>
 
             </a>
 
+
+
             <a href="https://www.linkedin.com/in/adikr28"
-               target="_blank">
+               target="_blank"
+               rel="noopener"
+               aria-label="LinkedIn">
 
                 <i class="fa-brands fa-linkedin"></i>
 
             </a>
 
-            <a href="mailto:adikr2802@gmail.com">
+
+
+            <a href="mailto:adikr2802@gmail.com"
+               aria-label="Email">
 
                 <i class="fa-solid fa-envelope"></i>
 
             </a>
 
+
         </div>
+
+
 
         <p class="copyright">
 
-            © 2026 Aditya Kumar. All Rights Reserved.
+            © 2026 Aditya Kumar.
+            All Rights Reserved.
 
         </p>
 
+
     </div>
 
+
 </footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
 <script src="js/script.js"></script>
 
+<!-- PROFILE PHOTO VIEWER -->
+<div id="profileModal" class="profile-modal" aria-hidden="true">
+    <div
+        class="profile-modal-overlay"
+        id="profileModalOverlay"
+        aria-label="Close photo viewer"
+    ></div>
+
+    <div
+        class="profile-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Aditya Kumar profile photo"
+    >
+        <button
+            type="button"
+            class="profile-modal-close"
+            id="profileModalClose"
+            aria-label="Close photo viewer"
+        >×</button>
+
+        <img src="assets/profile.jpg" alt="Aditya Kumar">
+    </div>
+</div>
+
+<style>
+.profile-photo {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    display: block;
+}
+
+.profile-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .25s ease, visibility .25s ease;
+}
+
+.profile-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.profile-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .90);
+    backdrop-filter: blur(10px);
+    cursor: zoom-out;
+}
+
+.profile-modal-content {
+    position: relative;
+    z-index: 1;
+    max-width: min(900px, 90vw);
+    max-height: 90vh;
+}
+
+.profile-modal-content img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 18px;
+    border: 2px solid #cda4ff;
+    box-shadow: 0 0 60px rgba(205, 164, 255, .25);
+}
+
+.profile-modal-close {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    z-index: 2;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    border-radius: 50%;
+    background: #cda4ff;
+    color: #111;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.profile-modal-close:hover {
+    transform: scale(1.06);
+}
+
+body.profile-modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .profile-modal {
+        padding: 16px;
+    }
+
+    .profile-modal-content img {
+        max-width: 94vw;
+        max-height: 80vh;
+    }
+
+    .profile-modal-close {
+        top: -12px;
+        right: -8px;
+        width: 42px;
+        height: 42px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const photoBtn = document.getElementById("profilePhotoBtn");
+    const modal = document.getElementById("profileModal");
+    const closeBtn = document.getElementById("profileModalClose");
+    const overlay = document.getElementById("profileModalOverlay");
+
+    if (!photoBtn || !modal || !closeBtn || !overlay) return;
+
+    function openProfilePhoto() {
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("profile-modal-open");
+    }
+
+    function closeProfilePhoto() {
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("profile-modal-open");
+    }
+
+    photoBtn.addEventListener("click", openProfilePhoto);
+    closeBtn.addEventListener("click", closeProfilePhoto);
+    overlay.addEventListener("click", closeProfilePhoto);
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && modal.classList.contains("is-open")) {
+            closeProfilePhoto();
+        }
+    });
+});
+</script>
+
+
+<style>
+/* =========================================================
+   SKILL → PROJECT NAVIGATION
+========================================================= */
+
+.skill-link {
+    cursor: pointer;
+    position: relative;
+}
+
+.skill-project-link {
+    display: inline-block;
+    margin-top: auto;
+    padding-top: 22px;
+
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: transform .2s ease;
+}
+
+.skill-link:hover .skill-project-link {
+    transform: translateX(5px);
+}
+
+.hero-tag-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero-tag-link:hover {
+    color: var(--accent);
+}
+
+/* Short visual confirmation when a skill jumps to its project */
+.project-highlight {
+    border-color: var(--accent) !important;
+    box-shadow:
+        0 0 0 1px var(--accent),
+        0 0 32px rgba(205, 164, 255, .16);
+    transform: translateY(-5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-highlight {
+        transform: none;
+    }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll("[data-skill-target]").forEach(function (skill) {
+
+        skill.addEventListener("click", function (event) {
+
+            const targetId = skill.dataset.skillTarget;
+            const target = document.getElementById(targetId);
+
+            if (!target) return;
+
+            event.preventDefault();
+
+            target.scrollIntoView({
+                behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+                    ? "auto"
+                    : "smooth",
+                block: "center"
+            });
+
+            target.classList.remove("project-highlight");
+
+            // Restart the highlight animation cleanly.
+            void target.offsetWidth;
+
+            target.classList.add("project-highlight");
+
+            window.setTimeout(function () {
+                target.classList.remove("project-highlight");
+            }, 1600);
+        });
+
+    });
+
+});
+</script>
+
 </body>
+
 </html>

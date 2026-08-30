@@ -1274,9 +1274,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         ctx.fillStyle =
                             isNearCursor
 
-                                ? "rgba(255,255,255,0.8)"
+                                ? "rgba(255,255,255,0.65)"
 
-                                : "rgba(208,167,255,0.32)";
+                                : "rgba(208,167,255,0.18)";
 
 
                         ctx.fill();
